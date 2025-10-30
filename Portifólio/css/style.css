@@ -1,0 +1,425 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root{
+    --corLogo:#1199db;
+    --corRoxa: #000000;
+    --corBranca: #FFFFFF;
+    --corAzulescuro: #090117;
+    --corCinza: #8D8D8D;
+    --corRoxoclara: #240144;
+}
+
+body{
+    background-color: var(--corAzulescuro);
+}
+
+
+.interface{
+    max-width: 1380;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid var(--corBranca);
+    border-radius: 8px;
+    color: var(--corBranca);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: var(--corLogo);
+    color: var(--corBranca);
+}
+
+h1.titulo-section{
+    font-size: 4rem;
+    color: var(--corBranca);
+}
+
+h1.titulo-section span{
+    color: var(--corLogo);
+}
+
+/* Estilho do cabeçalho */ 
+header{
+    background-color: transparent;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(to left, var(--corRoxa) 70%, var(--corLogo) 30%);
+    z-index: 9999999999;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logotipo-cabecalho img{
+    max-width: 90px;
+}
+
+header nav.menu-desktop ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 56px;
+}
+
+header nav.menu-desktop a{
+    color: var(--corBranca);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+header nav.menu-desktop a:hover{
+    color: var(--corLogo);
+}
+
+header nav.menu-desktop button{
+    width: 144px;
+    height: 48px;
+}
+
+/* Estilo menu mobile */
+
+.btn-menu-mobile, .menu-mobile{
+    display: none;
+}
+
+.btn-menu-mobile i{
+    font-size: 2.2rem;
+    color: var(--corRoxa);
+}
+
+.menu-mobile{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--corRoxoclara);
+    text-align: right;
+    padding: 32px 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.menu-mobile ul{
+    list-style: none;
+    padding: 64px 0;
+}
+
+.menu-mobile ul li a{
+    color: var(--corLogo);
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 24px;
+    display: block;
+    transition: .2s;
+}
+
+.menu-mobile ul li a:hover{
+    background-color: var(--corLogo);
+    color: var(--corRoxoclara);
+}
+
+.menu-mobile .bi-x-lg{
+    font-size: 2rem;
+    color: var(--corLogo);
+    padding: 24px;
+}
+
+.menu-mobile.abrir-menu{
+    left: 0;
+    pointer-events: initial;
+}
+
+/* Estilo da hero */ 
+
+section.hero{
+    background-image: linear-gradient(to left, var(--corRoxa) 70%, var(--corLogo) 30%);
+    padding-top: 144px;
+}
+
+.hero > .interface{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.hero .img-hero img{
+    display: flex;
+    align-items: left;
+    gap: 120px;
+    width: 650px;
+}
+
+.hero .txt-hero h1{
+    font-size: 4rem;
+    color: var(--corBranca);
+    font-weight: 400;
+}
+
+.hero .txt-hero h1 span{
+    color: var(--corLogo);
+    display: block;
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.hero .txt-hero p{
+    color: var(--corBranca);
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin: 24px 0;
+}
+
+.hero .txt-hero button{
+    width: 200px;
+    height: 48px;
+}
+
+/* Estilo sobre mim */
+section.sobre-mim{
+    padding: 80px 0;
+}
+
+.sobre-mim > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 96px;
+}
+.sobre-mim .txt-sobre p{
+    color: var(--corCinza);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+
+.sobre-mim .btn-redes button, footer .btn-redes button{
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.img-sobre img{
+    height: 700px;
+
+}
+
+/* Estilo da seção habilidades */
+section.skills{
+    padding: 80px 0;
+    background-color: var(--corRoxa);
+}
+
+.skills article{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.skills .box-skills{
+    background-color: var(--corAzulescuro);
+    padding: 24px ;
+    border-radius: 16px;
+}
+
+.box-skills .icon-skills{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 16px;
+}
+
+.box-skills .icon-skills img{
+    max-width: 80px;
+}
+
+.icon-skills h2{
+    color: var(--corBranca);
+}
+
+.icon-skills h2 span{
+    color: var(--corLogo);
+}
+
+.box-skills p{
+    color: var(--corCinza);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.skills .btn-contato{
+    text-align: center;
+}
+.skills .btn-contato button{
+    width: 200px;
+    height: 48px;
+}
+
+/* Estilo do portifólio */
+
+section.portifolio{
+    padding: 80px 0;
+}
+
+.portifolio p{
+    color: var(--corCinza);
+    margin: 16px 0 48px 0;
+}
+
+.portifolio .portifolio-container{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.portifolio-container .portifolio-box{
+    min-width: 200px;
+    height: 400px;
+    border: 2px solid var(--corLogo);
+    border-radius: 16px;
+
+    background-size: cover;
+    background-position-y: 0%;
+    transition: background-position-y 3s;
+    position: relative;
+    
+}
+
+.portifolio-container .portifolio-box:hover{
+    background-position-y: 100%;
+}
+
+.portifolio-container .portifolio-box .info-portifolio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#b6b7bd33;
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--corBranca);
+    font-size: 18px;
+}
+
+.portifolio-container .projeto1{
+    background-image: url(../images/10.png);
+}
+
+.portifolio-container .projeto2{
+    background-image: url(../images/12.png);
+}
+
+.portifolio-container .projeto3{
+    background-image: url(../images/12.png);
+}
+
+.portifolio-container .projeto4{
+    background-image: url(../images/14.png);
+}
+
+/* Estilo do formulário */
+
+section.contato{
+    padding: 80px 0;
+    background-color: var(--corRoxa);
+}
+
+.contato > .interface{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato .txt-contato p{
+    color: var(--corCinza);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.contato .txt-contato p i{
+    color: var(--corLogo);
+    font-size: 2rem;
+}
+
+.contato form{
+    width: 50%;
+}
+
+.contato form input, .contato form textarea{
+    width: 100%;
+    padding: 16px 10px;
+    background: transparent;
+    border: 2px solid var(--corLogo);
+    outline: none;
+    color: var(--corBranca);
+    font-size: 1.1rem;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.contato form .tel-proj{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contato form textarea{
+    resize: none;
+    height: 150px;
+}
+
+.contato form .btn-enviar input{
+    border-color: var(--corBranca);
+    transition: .5s;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+}
+
+.contato form .btn-enviar input:hover{
+    background-color: var(--corLogo);
+    color: var(--corRoxa);
+    border-color: var(--corLogo);
+}
+/* Estilo do rodapé */
+
+footer{
+    padding: 40px 0;
+}
+
+footer > .interface{
+    display: flex;
+    justify-content: space-between;
+    color: var(--corCinza);
+}
+
+footer .logo-footer img{
+    max-width: 160px;
+    margin-bottom: 16px;
+}
