@@ -1,289 +1,217 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsivo.css">
-    <title>HoraAnjos</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="icon" type="imagem/x-icon" href="images/Design sem nome.png">
-  <title>Portifólio Carlos Eduardo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090B">
+  <meta name="description" content="Portfólio de Carlos Eduardo Silva da Hora Anjos. Estudante do 6º período de Engenharia de Software na UNICEPLAC. Conheça minhas habilidades, projetos e contatos.">
+  <meta name="author" content="Carlos Eduardo Silva da Hora Anjos">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Carlos Eduardo — Desenvolvedor de Software em formação">
+  <meta property="og:description" content="Tecnologia, aprendizado e projetos na prática. Conheça meu portfólio e minha trajetória em Engenharia de Software.">
+  <title>Carlos Eduardo — Portfólio de Desenvolvimento</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+  <script src="js/menu_mobile.js" defer></script>
 </head>
-
 <body>
-
-    <header>
-
-        <div class="interface">
-
-            <section class="logotipo-cabecalho">
-                <img src="images/Design sem nome.png" alt="Logotipo do site">
-            </section>
-
-            <nav class="menu-desktop">
-
-                <ul>
-                    <li><a href="#hero">Início</a></li>
-                    <li><a href="#sobre-mim">Sobre mim</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#portifolio">Portifólio</a></li>
-                    <li><a href="#contato"><button>Contato</button></a></li>
-                </ul>
-
-            </nav>
-
-            <div class="btn-menu-mobile" id="btn-menu-mobile">
-                <i class="bi bi-list"></i>
-            </div>
-
-            <nav class="menu-mobile" id="menu-mobile">
-                <i class="bi bi-x-lg"></i>
-                <ul>
-                    <li><a href="#hero">Início</a></li>
-                    <li><a href="#sobre-mim">Sobre mim</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#portifolio">Portifólio</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  <symbol id="external" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+  <symbol id="github" viewBox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 5v-4a3.4 3.4 0 0 0-1-3c3-.3 6-1.5 6-5a4 4 0 0 0-1-3c.3-1 .3-2-.1-3 0 0-1.1-.3-3.9 1a13.4 13.4 0 0 0-7 0C5.2 3.7 4.1 4 4.1 4 3.7 5 3.7 6 4 7a4 4 0 0 0-1 3c0 3.5 3 4.7 6 5a3.4 3.4 0 0 0-1 3v4"/></symbol>
+  <symbol id="linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7m5 0v-7m0 3c0-4 5-4 5 0v4M7 7h.01"/></symbol>
+  <symbol id="code" viewBox="0 0 24 24"><path d="m7 7-5 5 5 5m10-10 5 5-5 5m-3-13-4 20"/></symbol>
+  <symbol id="database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></symbol>
+  <symbol id="book" viewBox="0 0 24 24"><path d="M12 5v16M12 5C8 2 4 3 2 4v15c3-1 6-1 10 2 4-3 7-3 10-2V4c-2-1-6-2-10 1Z"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="m5 3 4 1 1 5-3 2c2 3 3 4 6 6l2-3 5 1 1 4c-1 6-19-3-18-13Z"/></symbol>
+  <symbol id="copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V3H3v13h5"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+  <symbol id="branch" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M6 7v10m12-10c0 7-12 3-12 10"/></symbol>
+  <symbol id="layers" viewBox="0 0 24 24"><path d="m12 3 10 5-10 5L2 8l10-5Zm-10 9 10 5 10-5M2 16l10 5 10-5"/></symbol>
+  <symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+</svg>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#hero" aria-label="Carlos Eduardo — Início"><span class="monogram">ce<span>.</span></span><span class="brand-name">carlos eduardo</span></a>
+    <button class="menu-toggle" id="btn-menu-mobile" type="button" aria-controls="menu-mobile" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
+    <nav class="navigation" id="menu-mobile" aria-label="Navegação principal">
+      <a href="#hero" aria-current="location">Início</a><a href="#sobre-mim">Sobre</a><a href="#skills">Tecnologias</a><a href="#idiomas">Idiomas</a><a href="#portifolio">Projetos</a>
+      <a class="nav-contact" href="#contato">Contato <svg class="icon" aria-hidden="true"><use href="#external"/></svg></a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo">
+  <section class="hero container" id="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <span class="badge"><span class="badge-dot"></span> Engenharia de Software · 6º período</span>
+      <p class="eyebrow hero-intro">OLÁ, EU SOU</p>
+      <h1 id="hero-title">Carlos Eduardo<span class="title-dot">.</span></h1>
+      <p class="hero-role">Desenvolvedor Back-end<br><span>em formação.</span></p>
+      <p class="hero-description">Estudante de Engenharia de Software na UNICEPLAC. Gosto de entender como as coisas funcionam e transformar ideias em experiências digitais.</p>
+      <div class="hero-actions"><a class="button button-primary" href="#portifolio">Ver projetos <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></a><a class="button button-secondary" href="#contato">Entrar em contato</a></div>
+      <div class="hero-socials"><span>Encontre-me em</span><a href="https://github.com/horaanjos" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#github"/></svg> GitHub <svg class="icon small" aria-hidden="true"><use href="#external"/></svg></a><a href="https://www.linkedin.com/in/carlos-eduardo-anjos-3b8509322" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#linkedin"/></svg> LinkedIn <svg class="icon small" aria-hidden="true"><use href="#external"/></svg></a></div>
+    </div>
+    <figure class="portrait-card">
+      <div class="portrait-top"><span class="eyebrow">PESSOA POR TRÁS DO CÓDIGO</span><svg class="icon" aria-hidden="true"><use href="#code"/></svg></div>
+      <div class="portrait-image"><img src="images/portrait.webp" alt="Retrato de Carlos Eduardo" width="720" height="961" fetchpriority="high"></div>
+      <figcaption><span><strong>Carlos Eduardo</strong><span>Curiosidade que vira aprendizado.</span></span><span class="portrait-mark" aria-hidden="true">&lt;/&gt;</span></figcaption>
+    </figure>
+    <div class="hero-bottom"><span><svg class="icon small" aria-hidden="true"><use href="#pin"/></svg> Brasília, Brasil</span><a href="#sobre-mim">Conheça minha trajetória <span aria-hidden="true">↓</span></a><span class="hero-bottom-note">Aprendendo. Construindo. Evoluindo.</span></div>
+  </section>
+  <section class="section about-section" id="sobre-mim" aria-labelledby="about-title">
+    <div class="container about-grid">
+      <div class="section-heading reveal"><p class="eyebrow"><span>01 /</span> SOBRE MIM</p><h2 id="about-title">A curiosidade foi<br>o ponto de partida<span class="title-dot">.</span></h2></div>
+      <div class="about-content reveal">
+        <p class="about-lead">Sou Carlos Eduardo Silva da Hora Anjos, natural de Brasília e estudante de Engenharia de Software.</p>
+        <p>Meu interesse por tecnologia começou na infância, explorando computadores, jogos e dispositivos eletrônicos. A vontade de entender o que acontecia por trás das telas me levou ao desenvolvimento de software.</p>
+        <p>Hoje, aprofundo esse interesse na faculdade e em projetos acadêmicos. Meu foco é desenvolvimento Back-end, com interesse em APIs, bancos de dados e tecnologias Cloud. Busco oportunidades de estágio ou como Desenvolvedor Back-end Júnior.</p>
+        <div class="education-card"><span class="education-icon"><svg class="icon" aria-hidden="true"><use href="#book"/></svg></span><div><span class="eyebrow">FORMAÇÃO ACADÊMICA</span><h3>Engenharia de Software</h3><p>UNICEPLAC <span aria-hidden="true">·</span> 6º período</p></div><span class="education-status">Em andamento</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <div class="section-top skills-heading reveal"><div><p class="eyebrow"><span>02 /</span> COMPETÊNCIAS TÉCNICAS</p><h2 id="skills-title">Tecnologias &amp; Conhecimentos<span class="title-dot">.</span></h2></div><span class="skills-focus"><svg class="icon small" aria-hidden="true"><use href="#code"/></svg> Foco em Back-end</span></div>
+      <p class="section-description reveal">Linguagens, ferramentas e fundamentos que fazem parte da minha jornada no desenvolvimento de software.</p>
+      <div class="competence-groups">
+        <div class="skill-group programming-group" role="group" aria-labelledby="programming-title">
+          <div class="category-heading"><h3 id="programming-title">Linguagens de Programação</h3><span class="category-rule" aria-hidden="true"></span></div>
+          <ul class="skills-grid programming-grid">
+            <li class="skill-card skill-card-featured reveal"><span class="skill-icon" aria-hidden="true">Py</span><h4>Python</h4><p>Lógica e desenvolvimento de aplicações.</p></li>
+            <li class="skill-card skill-card-featured reveal"><span class="skill-icon" aria-hidden="true">Jv</span><h4>Java</h4><p>Programação orientada a objetos e sistemas.</p></li>
+            <li class="skill-card skill-card-featured reveal"><span class="skill-icon" aria-hidden="true">php</span><h4>PHP</h4><p>Programação voltada ao desenvolvimento web.</p></li>
+            <li class="skill-card skill-card-featured reveal"><span class="skill-icon" aria-hidden="true">SQL</span><h4>SQL</h4><p>Consultas e organização de dados relacionais.</p></li>
+            <li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">C</span><h4>C</h4><p>Fundamentos e estruturas de programação.</p></li>
+          <li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">TS</span><h4>TypeScript</h4><p>Tipagem estática nas interfaces e contratos do AnjosFlow.</p></li>
+</ul>
         </div>
-
-    </header>
-
-    <main>
-
-        <section class="hero" id="hero">
-            <div class="interface">
-
-                <div class="img-hero">
-                    <img src="images/MinhaFoto.png" alt="Foto de Carlos">
-                </div>
-
-                <div class="txt-hero">
-                    <h1>Seja bem-vindo <span>ao meu portifólio!</span></h1>
-                    <p>Olá! Meu nome é Carlos Eduardo Silva da Hora Anjos, seja bem-vindo ao meu portifólio.</p>
-                    <a href="#"><button>Entre em contato</button></a>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="sobre-mim" id="sobre-mim">
-
-            <div class="interface">
-
-                <div class="txt-sobre">
-
-                    <h1 class="titulo-section">Sobre <span>mim</span></h1>
-                    <p>
-                        Meu nome é Carlos Eduardo Silva da Hora Anjos, sou natural de Brasília, tenho 19 anos, e
-                        atualmente estou cursando o 4º período do bacharel em Sistemas de Informação no Unidesc.
-
-                    </p>
-
-                    <p>
-                        Meu desejo de trabalhar com tecnologia vem desde criança. Sempre fui fascinado por computadores,
-                        jogos e outros dispositivos eletrônicos, gostava de entender como funcionavam e passava horas
-                        explorando suas possibilidades. Com o tempo, essa curiosidade se transformou em uma verdadeira
-                        paixão por aprender mais sobre o mundo digital e suas inovações. Essa afinidade natural me levou
-                        a escolher o curso de Sistemas de Informação, uma área que une tecnologia, lógica e resolução de
-                        problemas — tudo o que sempre despertou meu interesse. Hoje, vejo nessa escolha uma oportunidade
-                        de transformar aquilo que sempre gostei em uma carreira sólida e repleta de desafios.
-
-                    </p>
-
-                    <div class="btn-redes">
-
-                        <a href="https://www.instagram.com/horaanjos" target="_blank"><button><i
-                                    class="bi bi-instagram"></i></button></a>
-                        <a href="https://www.linkedin.com/in/carlos-eduardo-anjos-3b8509322" target="_blank"><button><i
-                                    class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/horaanjos" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                    </div>
-
-                </div>
-
-                <div class="img-sobre">
-                    <img src="images/fotominah.png" alt="Imagem sobre mim">
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="skills" id="skills">
-            <div class="interface">
-
-                <h1 class="titulo-section">Minhas <span>habilidades</span></h1>
-
-                <article>
-
-                    <div class="box-skills">
-                        <div class="icon-skills">
-                            <img src="images/java.png" alt="icone-1">
-                            <h2>Tech <span>Java</span></h2>
-                        </div>
-                        <p>Desenvolvimento de aplicações robustas e seguras, com foco em desempenho e boas práticas.
-                            Utilizado para construção de sistemas escaláveis e de alta confiabilidade.</p>
-                    </div>
-
-                    <div class="box-skills">
-                        <div class="icon-skills">
-                            <img src="images/python.png" alt="icone-1">
-                            <h2>Tech <span>Python</span></h2>
-                        </div>
-                        <p>Linguagem versátil voltada para automação, análise de dados e inteligência artificial.
-                            Aplicada na criação de soluções eficientes e de fácil manutenção.</p>
-                    </div>
-
-                    <div class="box-skills">
-                        <div class="icon-skills">
-                            <img src="images/html.png" alt="icone-1">
-                            <h2>Tech <span>HTML</span></h2>
-                        </div>
-                        <p>Estruturação de páginas e interfaces web seguindo padrões modernos e semânticos. Base
-                            fundamental para o desenvolvimento de aplicações front-end.</p>
-                    </div>
-
-                    <div class="box-skills">
-                        <div class="icon-skills">
-                            <img src="images/css.png" alt="icone-1">
-                            <h2>Tech <span>CSS</span></h2>
-                        </div>
-                        <p>Estilização de interfaces e aprimoramento da experiência visual do usuário. Utilizado para
-                            criação de layouts responsivos e design consistente.</p>
-                    </div>
-
-                    <div class="box-skills">
-                        <div class="icon-skills">
-                            <img src="images/js.png" alt="icone-1">
-                            <h2>Tech <span>JavaScript</span></h2>
-                        </div>
-                        <p>Implementação de interatividade e dinamismo em aplicações web. Responsável pela integração
-                            entre lógica, design e experiência do usuário.</p>
-                    </div>
-
-                    <div class="box-skills">
-                        <div class="icon-skills">
-                            <img src="images/sql.png" alt="icone-1">
-                            <h2>Tech <span>SQL</span></h2>
-                        </div>
-                        <p>Modelagem, consulta e gerenciamento eficiente de bancos de dados relacionais. Utilizado para
-                            garantir integridade, desempenho e organização das informações.</p>
-                    </div>
-
-                </article>
-
-                <div class="btn-contato">
-                    <button>Entre em contato</button>
-                </div>
-
-
-            </div>
-        </section>
-
-
-        <section class="portifolio" id="portifolio">
-
-            <div class="interface">
-
-                <h1 class="titulo-section">Meu <span>portifólio</span></h1>
-                <p>Ainda no início da minha trajetória, venho desenvolvendo projetos durante a faculdade, como um menu
-                    de biblioteca em Java, a modelagem de um banco de dados para um sistema de vendas de cursos online e
-                    um sistema de banco de dados para uma oficina.</p>
-
-                <article class="portifolio-container">
-
-                    <a href="https://github.com/horaanjos/SistemaBiblioteca" target="_blank">
-                        <div class="portifolio-box projeto1">
-                            <div class="info-portifolio">Menu biblioteca</div>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/horaanjos/Banco_oficina" target="_blank">
-                        <div class="portifolio-box projeto2">
-                            <div class="info-portifolio">Sistema de Oficina</div>
-                        </div>
-                    </a>
-
-                    <a href="https://drive.google.com/file/d/1QsTfWltN_3hfuFkLMSt7UIpyEDivpBNI/view?usp=sharing"
-                        target="_blank">
-                        <div class="portifolio-box projeto3">
-                            <div class="info-portifolio">Modelagem</div>
-                        </div>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <div class="portifolio-box projeto4">
-                            <div class="info-portifolio">Em construção</div>
-                        </div>
-                    </a>
-
-                </article>
-
-            </div>
-        </section>
-
-        <section class="contato" id="contato">
-
-            <div class="interface">
-
-                <div class="txt-contato">
-                    <h1 class="titulo-section">Entre em <span>contato</span></h1>
-                    <p><i class="bi bi-envelope"></i> horaanjos@gmail.com</p>
-                    <p><i class="bi bi-whatsapp"></i> (61) 99841-4756</p>
-                </div>
-
-                <form action="#">
-
-                    <input type="text" name="#" id="nome" placeholder="Seu nome completo">
-                    <input type="email" name="#" id="email" placeholder="Seu e-mail">
-                    <div class="tel-proj">
-                        <input type="tel" name="#" id="telefone" placeholder="Seu WhatsApp">
-                        <input type="text" name="#" id="Motivo" placeholder="Motivo do contato">
-                    </div>
-
-                    <textarea name="#" id="Contato" placeholder="Fale mais sobre sua ideia"></textarea>
-
-                    <div class="btn-enviar">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="interface">
-
-            <div class="logo-footer">
-                <img src="images/Design sem nome.png" alt="Logo do site">
-                <p>CNPJ: 00.000.000/0000-00</p>
-                <p>Todos os direitos reservados.</p>
-            </div>
-
-            <div class="btn-redes">
-                <a href="https://www.instagram.com/horaanjos" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                <a href="https://www.linkedin.com/in/carlos-eduardo-anjos-3b8509322" target="_blank"><button><i class="bi bi-linkedin"></i><a>
-                <a href="https://github.com/horaanjos" target="_blank"><button><i class="bi bi-github"></i></button></a>
-            </div>
-
+<div class="skill-group" role="group" aria-labelledby="backend-title"><div class="category-heading"><h3 id="backend-title">Back-end e APIs</h3><span class="category-rule" aria-hidden="true"></span></div><ul class="skills-grid"><li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">SB</span><h4>Spring Boot</h4><p>Aplicações Java e configuração do Back-end.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">SW</span><h4>Spring Web</h4><p>Controllers e endpoints HTTP.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">JPA</span><h4>Spring Data JPA</h4><p>Persistência e repositórios de dados.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">BV</span><h4>Bean Validation</h4><p>Validação dos dados recebidos pela API.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">API</span><h4>APIs REST</h4><p>Recursos, operações HTTP e tratamento de erros.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">{ }</span><h4>JSON</h4><p>Troca de dados entre Front-end e Back-end.</p></li></ul></div>
+<div class="skill-group" role="group" aria-labelledby="data-title"><div class="category-heading"><h3 id="data-title">Persistência e Banco de Dados</h3><span class="category-rule" aria-hidden="true"></span></div><ul class="skills-grid"><li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">PG</span><h4>PostgreSQL</h4><p>Persistência relacional dos dados de estudo.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">Fly</span><h4>Flyway</h4><p>Versionamento e migrações do schema.</p></li></ul></div>
+<div class="skill-group" role="group" aria-labelledby="tests-title"><div class="category-heading"><h3 id="tests-title">Testes de Software</h3><span class="category-rule" aria-hidden="true"></span></div><ul class="skills-grid"><li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">JU</span><h4>JUnit</h4><p>Testes automatizados do Back-end Java.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">Mo</span><h4>Mockito</h4><p>Mocks e isolamento de dependências nos testes.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">Vt</span><h4>Vitest</h4><p>Testes automatizados do Front-end.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">TL</span><h4>Testing Library</h4><p>Testes de componentes e interações.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">PW</span><h4>Playwright</h4><p>Testes de ponta a ponta no navegador.</p></li></ul></div>
+        <div class="skill-group" role="group" aria-labelledby="tools-title">
+          <div class="category-heading"><h3 id="tools-title">Ferramentas e Versionamento</h3><span class="category-rule" aria-hidden="true"></span></div>
+          <ul class="skills-grid">
+            <li class="skill-card reveal"><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#branch"/></svg></span><h4>Git</h4><p>Controle de versões do código.</p></li>
+            <li class="skill-card reveal"><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#github"/></svg></span><h4>GitHub</h4><p>Repositórios e colaboração em projetos.</p></li>
+          <li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">Mvn</span><h4>Maven</h4><p>Dependências, build e testes do Back-end Java.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">&gt;_</span><h4>Docker Compose</h4><p>PostgreSQL local com configuração de serviços e volumes.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span><h4>Netlify</h4><p>Publicação da apresentação web do AnjosFlow.</p></li>
+</ul>
         </div>
-    </footer>
-
-    <script src="js/menu_mobile.js"></script>
-
+        <div class="skill-group" role="group" aria-labelledby="fundamentals-title">
+          <div class="category-heading"><h3 id="fundamentals-title">Fundamentos de Programação</h3><span class="category-rule" aria-hidden="true"></span></div>
+          <ul class="skills-grid">
+            <li class="skill-card reveal"><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#code"/></svg></span><h4>Lógica de Programação</h4><p>Raciocínio e resolução de problemas.</p></li>
+            <li class="skill-card reveal"><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#layers"/></svg></span><h4>Programação Orientada a Objetos (POO)</h4><p>Classes, objetos e organização do código.</p></li>
+            <li class="skill-card reveal"><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#layers"/></svg></span><h4>Estruturas de Dados</h4><p>Organização e manipulação de informações.</p></li>
+            <li class="skill-card reveal"><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#database"/></svg></span><h4>Banco de Dados</h4><p>Fundamentos de modelagem e persistência.</p></li>
+          </ul>
+        </div>
+        <div class="skill-group" role="group" aria-labelledby="engineering-title">
+          <div class="category-heading"><h3 id="engineering-title">Engenharia de Software</h3><span class="category-rule" aria-hidden="true"></span></div>
+          <ul class="skills-grid">
+            <li class="skill-card reveal"><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#layers"/></svg></span><h4>Engenharia de Software</h4><p>Fundamentos para construir software.</p></li>
+            <li class="skill-card reveal"><span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#code"/></svg></span><h4>Desenvolvimento de Sistemas</h4><p>Organização da lógica e das soluções.</p></li>
+          </ul>
+        </div>
+        <div class="skill-group" role="group" aria-labelledby="web-title">
+          <div class="category-heading"><h3 id="web-title">Desenvolvimento Web</h3><span class="category-rule" aria-hidden="true"></span></div>
+          <ul class="skills-grid web-grid">
+            <li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span><h4>HTML</h4><p>Estrutura semântica das páginas.</p></li>
+            <li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">{ }</span><h4>CSS</h4><p>Interfaces e layouts responsivos.</p></li>
+            <li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">JS</span><h4>JavaScript</h4><p>Interatividade no navegador.</p></li>
+          <li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">Re</span><h4>React</h4><p>Interfaces organizadas em componentes.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">Tw</span><h4>Tailwind CSS</h4><p>Estilização e layouts responsivos no AnjosFlow.</p></li>
+<li class="skill-card reveal"><span class="skill-icon" aria-hidden="true">Vi</span><h4>Vite</h4><p>Ambiente de desenvolvimento e build do Front-end.</p></li>
+</ul><p class="supporting-label">Bibliotecas usadas no AnjosFlow</p><ul class="supporting-technologies" aria-label="Bibliotecas de interface do AnjosFlow"><li>React Router</li><li>Lucide</li><li>FullCalendar</li><li>Luxon</li><li>Recharts</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section languages-section" id="idiomas" aria-labelledby="languages-title">
+    <div class="container">
+      <div class="reveal"><p class="eyebrow"><span>03 /</span> IDIOMAS</p><h2 id="languages-title">Idiomas<span class="title-dot">.</span></h2><p class="section-description">Competências linguísticas que complementam minha formação e desenvolvimento profissional.</p></div>
+      <div class="languages-grid">
+        <article class="language-card reveal"><span class="language-icon" aria-hidden="true">PT</span><div><h3>Português</h3><p>Nativo ou fluente</p></div><svg class="icon language-globe" aria-hidden="true"><use href="#globe"/></svg></article>
+        <article class="language-card reveal"><span class="language-icon" aria-hidden="true">EN</span><div><h3>Inglês</h3><p>Intermediário</p></div><svg class="icon language-globe" aria-hidden="true"><use href="#globe"/></svg></article>
+        <article class="language-card reveal"><span class="language-icon" aria-hidden="true">ES</span><div><h3>Espanhol</h3><p>Básico a intermediário</p></div><svg class="icon language-globe" aria-hidden="true"><use href="#globe"/></svg></article>
+      </div>
+    </div>
+  </section>
+  <section class="section projects-section" id="portifolio" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="section-top reveal"><div><p class="eyebrow"><span>04 /</span> PROJETOS</p><h2 id="projects-title">Projetos em prática<span class="title-dot">.</span></h2></div></div>
+      <p class="section-description reveal">Projetos que conectam meu aprendizado a aplicações reais, do desenvolvimento web ao Back-end Java.</p>
+      <div class="projects-grid projects-grid-showcase">
+        <article class="project-card featured-project reveal" aria-labelledby="anjosflow-title">
+          <a class="anjosflow-preview" href="images/anjosflow-dashboard.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ampliar captura real do dashboard do AnjosFlow">
+            <img src="images/anjosflow-dashboard.jpg" alt="Dashboard real do AnjosFlow, com navegação de disciplinas, tarefas, calendário, Pomodoro e metas de estudo" width="1200" height="1332" loading="lazy">
+            <span class="anjosflow-preview-caption">Dashboard · captura real <svg class="icon small" aria-hidden="true"><use href="#external"/></svg></span>
+          </a>
+          <div class="project-content">
+            <span class="project-kicker">FULL STACK · FOCO EM BACK-END JAVA</span>
+            <div class="project-heading"><h3 id="anjosflow-title">AnjosFlow</h3><svg class="icon" aria-hidden="true"><use href="#code"/></svg></div>
+            <p>Aplicação de organização de estudos para universitários e concurseiros. Reúne disciplinas, tarefas, calendário, Pomodoro, metas e revisões em um só lugar, com planejamento semanal e persistência em PostgreSQL.</p>
+            <ul class="tags" aria-label="Principais tecnologias do AnjosFlow"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>Docker Compose</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li></ul>
+            <p class="project-demo-note">A apresentação online funciona em modo de portfólio, com gravações desabilitadas. API e banco de dados são executados localmente.</p>
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/horaanjos/AnjosFlow" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#github"/></svg> Ver repositório <svg class="icon" aria-hidden="true"><use href="#external"/></svg></a>
+              <a class="project-link" href="https://anjosflow-horaanjos.netlify.app" target="_blank" rel="noopener noreferrer">Ver apresentação <svg class="icon" aria-hidden="true"><use href="#external"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card portfolio-project reveal">
+          <div class="project-preview preview-portfolio" role="img" aria-label="Identidade visual do portfólio pessoal de Carlos Eduardo">
+            <span class="preview-label">HTML / CSS / JAVASCRIPT</span>
+            <span class="portfolio-preview-mark" aria-hidden="true">ce<span>.</span></span>
+            <span class="preview-caption">portfólio pessoal<span>&lt;/&gt;</span></span>
+          </div>
+          <div class="project-content">
+            <div class="project-heading"><h3>Portfólio — Carlos Eduardo</h3><svg class="icon" aria-hidden="true"><use href="#code"/></svg></div>
+            <p>Site pessoal desenvolvido com HTML, CSS e JavaScript puro. Reúne minha apresentação, competências técnicas, idiomas e contatos em uma interface responsiva, com navegação acessível e animações discretas.</p>
+            <ul class="tags" aria-label="Tecnologias do projeto"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a class="project-link" id="portfolio-repository" href="https://github.com/horaanjos/Portif-lio_horaanjos" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#github"/></svg> Ver repositório <svg class="icon" aria-hidden="true"><use href="#external"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section contact-section" id="contato" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div class="contact-copy reveal">
+        <p class="eyebrow"><span>05 /</span> CONTATO</p><h2 id="contact-title">Vamos construir<br>algo juntos<span class="title-dot">?</span></h2>
+        <p>Tem uma ideia, uma oportunidade ou quer trocar experiências sobre tecnologia? Vamos conversar.</p>
+        <div class="email-row"><a href="mailto:horaanjos@gmail.com">horaanjos@gmail.com <svg class="icon" aria-hidden="true"><use href="#external"/></svg></a><button class="copy-button" id="copy-email" type="button" aria-label="Copiar endereço de e-mail" title="Copiar e-mail"><svg class="icon" aria-hidden="true"><use href="#copy"/></svg></button></div><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        <a class="contact-phone" href="https://wa.me/5561998414756" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg> WhatsApp · (61) 99841-4756 <svg class="icon small" aria-hidden="true"><use href="#external"/></svg></a>
+        <div class="contact-socials"><a href="https://github.com/horaanjos" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon small" aria-hidden="true"><use href="#external"/></svg></a><a href="https://www.linkedin.com/in/carlos-eduardo-anjos-3b8509322" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon small" aria-hidden="true"><use href="#external"/></svg></a><a href="https://www.instagram.com/horaanjos" target="_blank" rel="noopener noreferrer">Instagram <svg class="icon small" aria-hidden="true"><use href="#external"/></svg></a></div>
+      </div>
+      <form class="contact-form reveal" id="contact-form" action="mailto:horaanjos@gmail.com" method="get">
+        <h3>Deixe sua mensagem</h3><p class="form-description">O envio abre seu aplicativo de e-mail com a mensagem preenchida.</p>
+        <div class="form-row"><div class="field"><label for="nome">Seu nome <span aria-hidden="true">*</span></label><input id="nome" name="nome" autocomplete="name" placeholder="Como posso chamar você?" required maxlength="100"></div><div class="field"><label for="email">Seu e-mail <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required maxlength="254"></div></div>
+        <div class="form-row"><div class="field"><label for="telefone">WhatsApp <span class="optional">(opcional)</span></label><input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" maxlength="30"></div><div class="field"><label for="motivo">Assunto <span aria-hidden="true">*</span></label><input id="motivo" name="subject" placeholder="Sobre o que vamos conversar?" required maxlength="150"></div></div>
+        <div class="field"><label for="mensagem">Mensagem <span aria-hidden="true">*</span></label><textarea id="mensagem" name="body" placeholder="Conte um pouco sobre sua ideia…" required rows="4" maxlength="4000"></textarea></div>
+        <button class="button button-primary form-submit" type="submit">Preparar e-mail <svg class="icon" aria-hidden="true"><use href="#arrow"/></svg></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <noscript><p>Para enviar sua mensagem completa, escreva diretamente para <a href="mailto:horaanjos@gmail.com">horaanjos@gmail.com</a>.</p></noscript>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#hero" aria-label="Voltar ao início"><span class="monogram">ce<span>.</span></span><span class="footer-name">Carlos Eduardo<span>Desenvolvimento & aprendizado</span></span></a><p>© <span id="year">2026</span> Carlos Eduardo. Todos os direitos reservados.</p><a class="back-top" href="#hero">Voltar ao topo <span aria-hidden="true">↑</span></a></div></footer>
 </body>
-
 </html>
