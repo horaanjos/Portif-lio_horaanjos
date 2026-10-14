@@ -56,7 +56,6 @@
   .hero-bottom { margin-top: 48px; }
   .hero-bottom-note { display: none !important; }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
-  .about-grid h2 br { display: none; }
   .education-card { max-width: 550px; }
   .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
