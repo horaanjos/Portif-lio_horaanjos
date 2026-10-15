@@ -5,9 +5,9 @@
   .portrait-image { height: 375px; }
 }
 @media (max-width: 1100px) {
-  .skills-grid.programming-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .competence-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .skill-group, .skill-group-primary, .skill-group-languages, .skill-group-frontend { grid-column: auto; }
   .skills-heading { align-items: flex-start; flex-direction: column; gap: 16px; }
-  .skills-grid.web-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .language-card { padding: 20px; gap: 12px; }
   .language-globe { display: none; }
   .container { width: calc(100% - 64px); }
@@ -17,7 +17,6 @@
   .portrait-image { height: 310px; }
   .about-grid, .contact-grid { gap: 45px; }
   .navigation { gap: 22px; }
-  .skill-card { padding: 22px; }
   .project-content { padding: 20px; }
   .project-heading h3 { font-size: 13px; }
   .contact-form { padding: 24px; }
@@ -28,8 +27,6 @@
   .anjosflow-preview { border-right: 0; border-bottom: 1px solid var(--border); }
   .navigation { gap: 12px; }
   .brand-name { display: none; }
-  .competence-groups { grid-template-columns: 1fr; gap: 30px; }
-  .skills-grid.web-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .language-card { align-items: flex-start; flex-direction: column; }
   :root { --section-space: 80px; }
   .container { width: calc(100% - 48px); }
@@ -57,7 +54,6 @@
   .hero-bottom-note { display: none !important; }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .education-card { max-width: 550px; }
-  .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .project-heading h3 { font-size: 15px; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -67,6 +63,10 @@
   .footer-inner > p { order: 3; width: 100%; }
 }
 @media (max-width: 640px) {
+  .competence-groups { grid-template-columns: 1fr; gap: 12px; }
+  .skill-group { padding: 20px; }
+  .category-description { margin-bottom: 14px; }
+  .category-focus { font-size: 9px; }
   .project-card.portfolio-project { grid-template-columns: 1fr; }
   .featured-project .project-content { padding: 24px; }
   .anjosflow-preview img { height: 300px; }
@@ -76,10 +76,6 @@
   .portfolio-project .project-heading h3 { font-size: 18px; }
   .brand-name { display: inline; }
   .skills-heading h2 { font-size: 29px; overflow-wrap: anywhere; }
-  .skills-grid.programming-grid, .skills-grid.web-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .skill-card h4 { font-size: 13px; }
-  .category-heading { gap: 12px; }
-  .category-heading h3 { font-size: 12px; }
   .languages-section { padding-block: var(--section-space); }
   .languages-grid { grid-template-columns: 1fr; gap: 12px; }
   .language-card { flex-direction: row; align-items: center; padding: 22px; }
@@ -129,10 +125,6 @@
   .education-status { margin-left: 52px; }
   .section-top { align-items: flex-start; flex-direction: column; gap: 18px; margin-bottom: 28px; }
   .section-top > p br { display: none; }
-  .skill-card { padding: 20px; }
-  .skill-icon { margin-bottom: 18px; }
-  .skill-card p { font-size: 12px; }
-  .skills-grid { gap: 12px; }
   .projects-grid { grid-template-columns: 1fr; gap: 24px; }
   .project-preview { height: 230px; }
   .project-content { padding: 24px; }
@@ -157,7 +149,6 @@
   .hero-role { font-size: 22px; }
   .hero-socials > span { width: 100%; }
   .hero-actions .button { padding-inline: 13px; }
-  .skill-card { padding: 16px; }
   .email-row { gap: 8px; }
   .email-row > a { font-size: 16px; gap: 7px; }
   .education-card h3 { font-size: 12px; }
